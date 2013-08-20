@@ -12,13 +12,13 @@
 
 Jobs:
   # must be one word
-  Woodcutter:
+  Favágó:
     # full name of the job (displayed when browsing a job, used when joining and leaving)
     # also can be used as a prefix for the user's name if the option is enabled.
     # Shown as a prefix only when the user has 1 job.
     #
     # NOTE: Must be 1 word
-    fullname: Woodcutter
+    fullname: Favágó
     # Shortened version of the name of the job. Used as a prefix when the user has more 
     # than 1 job
     shortname: W
@@ -97,17 +97,17 @@ Jobs:
       # block name/id (with optional sub-type)
       LOG:
         # base income
-        income: 5.0
+        income: 100.0
         # base experience
-        experience: 5.0
+        experience: 100.0
     # payment for placing a block
     Place:
       SAPLING: 
         income: 1.0
         experience: 1.0
       WOOD: 
-        income: 2.0
-        experience: 2.0
+        income: 100.0
+        experience: 100.0
     # killing a mob
     Kill:
       # mob name
@@ -135,9 +135,9 @@ Jobs:
       aaaaaatest.node2:
         value: true
         # Permission granted when reaching level 10
-        level: 10
-  Miner:
-    fullname: Miner
+        level: 100
+  Bányász:
+    fullname: Bányász
     shortname: M
     description: Earns money mining minerals and ores.
     ChatColour: DARK_GRAY
@@ -193,8 +193,8 @@ Jobs:
       Miner:
         income: 10.0
         experience: 10.0
-  Builder:
-    fullname: Builder
+  Épitö:
+    fullname: Épitö
     shortname: B
     description: Earns money for building structures.
     ChatColour: WHITE
@@ -266,9 +266,10 @@ Jobs:
     custom-kill:
       Builder:
         income: 10.0
-        experience: 10.0
-  Digger:
-    fullname: Digger
+        experience: :
+        
+Ásómunkás:
+    fullname: Ásómunkás
     shortname: D
     description: Earns money for terraforming the world.
     ChatColour: GOLD
@@ -419,8 +420,8 @@ Jobs:
       Fisherman:
         income: 10.0
         experience: 10.0
-  Weaponsmith:
-    fullname: Weaponsmith
+  Kovács:
+    fullname: Kovács
     shortname: W
     description: Earns money from crafting and repairing weapons.
     ChatColour: DARK_PURPLE
@@ -463,8 +464,8 @@ Jobs:
       GOLD_INGOT:
         income: 2.0
         experience: 2.0
-  Brewer:
-    fullname: Brewer
+  Varázsló:
+    fullname: Varázsló
     shortname: Br
     description: Earns money brewing potions.
     ChatColour: LIGHT_PURPLE
@@ -503,8 +504,8 @@ Jobs:
       GHAST_TEAR:
         income: 4.0
         experience: 4.0
-  Enchanter:
-    fullname: Enchanter
+  Fejlesztő:
+    fullname: Fejlesztő
     shortname: E
     description: Earns money enchanting weapons.
     ChatColour: DARK_BLUE
@@ -527,8 +528,8 @@ Jobs:
       DIAMOND_SWORD:
         income: 10.0
         experience: 10.0
-  None:
-    fullname: None
+  Munkanélküli:
+    fullname: Munkanélküli
     shortname: N
     ChatColour: WHITE
     chat-display: none
